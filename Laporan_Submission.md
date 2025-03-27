@@ -50,20 +50,20 @@ Dataset yang digunakan dalam proyek ini merupakan dataset harga rumah di Jakarta
 #### 1. Informasi Dataset
 Berikut adalah Informasi Dataset:
 
-![Informasi Dataset](image\informasi_dataset1.png)
-![Informasi Dataset](image\informasi_dataset2.png)
+![Informasi Dataset](image/informasi_dataset1.png)
+![Informasi Dataset](image/informasi_dataset2.png)
 
 Dari Informasi Dataset tersebut, Dataset berisi 1001 data dengan 7 fitur: HARGA (target, perlu dikonversi ke numerik), LT dan LB (luas tanah & bangunan), JKT dan JKM (jumlah kamar tidur & mandi), GRS (garasi, biner), serta KOTA (kategori). Rata-rata harga rumah Rp17,47 miliar dengan variasi besar (Rp430 juta - Rp250 miliar). Beberapa fitur memiliki outlier, seperti luas bangunan hingga 10.000 m² dan jumlah kamar 27. Evaluasi lebih lanjut diperlukan untuk menangani outlier serta normalisasi data sebelum digunakan dalam model Machine Learning.
 
 #### 2. Distribusi Harga Rumah
 Berikut adalah visualisasi distribusi harga rumah:
 
-![Distribusi Harga Rumah](image\distribusi_harga_rumah.png)
+![Distribusi Harga Rumah](image/distribusi_harga_rumah.png)
 
 #### 3. Heatmap Korelasi Antar Fitur
 Berikut adalah heatmap korelasi antar fitur:
 
-![Heatmap Korelasi](image\correlation_map.png)
+![Heatmap Korelasi](image/correlation_map.png)
 
 ---
 
@@ -101,7 +101,7 @@ Metrik evaluasi yang digunakan dalam proyek ini adalah:
 
 Berikut adalah visualisasi hasil prediksi:
 
-![Visualisasi Hasil Prediksi](image\visualisasi.png)
+![Visualisasi Hasil Prediksi](image/visualisasi.png)
 
 Berdasarkan hasil evaluasi, **Random Forest Regression memiliki performa lebih baik** dibandingkan dengan Linear Regression karena memiliki nilai MSE yang lebih rendah serta R² yang lebih tinggi.
 
