@@ -112,4 +112,4 @@ Berdasarkan hasil evaluasi, **Random Forest Regression memiliki performa lebih b
 3. Model ini dapat digunakan sebagai alat bantu bagi pembeli dan investor dalam mengambil keputusan yang lebih tepat terkait properti di Jakarta Selatan.
 
 **Catatan**:
-- Gambar dapat ditemukan di folder `images`.
+- Gambar dapat ditemukan di folder `image`.
