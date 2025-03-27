@@ -105,6 +105,19 @@ Berikut adalah visualisasi hasil prediksi:
 
 Berdasarkan hasil evaluasi, **Random Forest Regression memiliki performa lebih baik** dibandingkan dengan Linear Regression karena memiliki nilai MSE yang lebih rendah serta R² yang lebih tinggi.
 
+### Prediksi dengan Model yang Disimpan
+
+```python
+loaded_model = joblib.load('prediksi_harga_rumah_jaksel_rf.pkl')
+loaded_scaler = joblib.load('scaler.pkl')
+new_data = np.array([[600, 350, 5, 4, 1]])
+new_data_scaled = loaded_scaler.transform(new_data)
+predicted_price = loaded_model.predict(new_data_scaled)
+print(f"Prediksi Harga Rumah: Rp {predicted_price[0]:,.2f}")
+```
+output : ![Output Prediksi](image/output.png)
+
+---
 ## Kesimpulan
 
 1. Model **Random Forest Regression** lebih unggul dalam memprediksi harga rumah di Jakarta Selatan dibandingkan **Linear Regression**.
